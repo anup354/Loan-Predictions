@@ -3,7 +3,6 @@ import React from "react";
 
 const Footer = () => {
   const footerNavs = [
-    
     {
       label: "Company",
       items: [
@@ -28,11 +27,13 @@ const Footer = () => {
       <footer className="pt-10">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="justify-between items-center gap-12 md:flex">
-            <div className="flex-1 max-w-lg">
-              <h3 className="text-2xl font-bold">
-                Get best loan predictor system.
-              </h3>
-            </div>
+            <Link href="/predict">
+              <div className="flex-1 max-w-lg">
+                <h3 className="text-2xl font-bold">
+                  Get best loan predictor system.
+                </h3>
+              </div>
+            </Link>
             <div className="flex-1 mt-6 md:mt-0">
               <form
                 onSubmit={(e) => e.preventDefault()}
@@ -144,26 +145,23 @@ const Footer = () => {
 
               <li>
                 <Link href="" className="hover:text-gray-800 duration-150">
-                Partners
+                  Partners
                 </Link>
               </li>
               <li>
                 <Link href="" className="hover:text-gray-800 duration-150">
-                Team
+                  Team
                 </Link>
               </li>
               <li>
                 <Link href="" className="hover:text-gray-800 duration-150">
-                Careers
+                  Careers
                 </Link>
               </li>
-             
             </ul>
           </div>
           <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
-            <p className="text-gray-600">
-              © 2023 . All rights reserved.
-            </p>
+            <p className="text-gray-600">© 2023 . All rights reserved.</p>
             <div className="flex items-center gap-x-6 text-gray-400 mt-6">
               <Link href="javascript:void()">
                 <svg
